@@ -129,6 +129,8 @@ body{
     height: 90%;
     border: none;
     background-color: #FFFFFF;
+   font-size: 22px;
+
 
 }
 #desencrip:focus{outline: none;}
