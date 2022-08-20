@@ -13,9 +13,6 @@ var botCopiar = document.getElementById('copiar')
 var botaoCript = document.getElementById('botCripto')
 var botaoDesencript = document.getElementById('botDesencripto')
 
-
-
-
     function encriptador(texto){
         texto = texto.replace(/e/g,'enter')
         texto = texto.replace(/i/g,'imes')
@@ -44,9 +41,6 @@ var botaoDesencript = document.getElementById('botDesencripto')
             fundoImage.display ='block'
             result.style.display = 'none'
             botCopiar.style.display = 'none'
-
-            
-
         }
     }
     function clicaBotaoCripto(){
@@ -62,10 +56,8 @@ var botaoDesencript = document.getElementById('botDesencripto')
     }
     function copiarBotao(){
         navigator.clipboard.writeText(result.value)
+        alert("Copiado")
 
-
-
-        
     }
    
 
