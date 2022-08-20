@@ -1,0 +1,188 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #495057;
+    font-weight: 400;
+
+}
+html{
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+.botao{
+    width: 21vw;
+    height: 67px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+   box-shadow: 0px 24px 32px -8px #00000014;
+
+    flex-grow: 1;
+}
+
+#botCripto{
+    background: #0A3871;
+    color:#FFFFFF;
+}
+#botDesencripto{
+    background: #E5E5E5;
+    color:#0A3871;
+
+}
+.logo{
+    margin-left: 84px;
+    margin-top: 40px;
+    width: 31px;
+    height: 48px;
+
+    position:absolute;
+}
+.containerPrin{
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+.textoInput{
+    margin-left: 20%;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.texto{
+    font-size: 32px;
+    text-align: left;
+    word-break: break-all;
+    resize: none;
+    background-color: none;
+
+}
+#encript{
+    margin-top: 165px;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 50vh;
+    border: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    line-height: 42px;
+}
+
+#encript::placeholder{
+    position: absolute;
+    top:0;
+    color: #0A3871;
+    
+}
+#encript:focus{
+    outline: none;
+}
+#fundoResultado{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+#fundoResultado p:nth-child(2){
+    font-weight: 700;
+    font-size: 24px; 
+    line-height:28.8px
+}
+
+.result{
+   background-color: #FFFFFF;
+   margin-right: 25px;
+   height: 94vh;
+   width: 50%;
+   border-radius: 32px;
+   padding: 32px;
+   padding-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 24px 32px -8px #00000014;
+
+
+
+}
+#desencrip{
+    width: 100%;
+    height: 90%;
+    border: none;
+    background-color: #FFFFFF;
+
+}
+#desencrip:focus{outline: none;}
+#copiar{
+    margin-top: 20px;
+
+}
+@media screen and (max-width: 1024px){
+    html{
+        overflow-y: auto;
+    }
+    .containerPrin{
+        flex-direction: column;
+    }
+    .imgLupa{
+        display: none;
+    }
+
+    .result{
+        height: auto;
+        width: 100%;
+        align-self: center;
+        margin: 20px 0px 0px 0px;
+    }
+    .textoInput{
+        margin: 10px;
+    }
+
+    .botao{
+        width: 100%;
+    }
+    #botCripto{
+        margin-bottom: 20px;
+    }
+    .cont-btns{
+        flex-direction: column;
+    }
+
+        #encript{
+            height: 30vh;
+        }
+    .logo{
+        margin-left:10px ;
+    }
+}
+#botCripto:active{
+    box-shadow: 0px 0px 10px 5px #0A3871 ;
+    background-color: rgb(244, 244, 244);
+    color: #495057;
+}
+#botDesencripto:active{
+    box-shadow: 0px 0px 10px 5px #b7bcc2 ;
+    background-color: #3d587a;
+    color: #d6d6d6;
+}
+
+
+
+
+    
+

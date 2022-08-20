@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="./css.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <img class="logo" src="./source/logo-alura.svg">
+        <br>
+    <div class="containerPrin" style="width:100%">
+
+        <div class="textoInput">
+            <textarea type="text" class="texto" id="encript" placeholder="Digite uma mensagem" ></textarea>
+            <br>
+            <div style="display: flex; align-items: center;">
+                <img src="./source/info.svg">
+                <p style="margin-left: 5px ;">Apenas letras minúsculas e sem acento.</p>
+            </div>  
+            <div class="cont-btns" style="display: flex;">
+                <button class="botao" id="botCripto" style="margin-right: 2rem;">Criptografe</button>
+                <button class="botao" id="botDesencripto" >Descriptografar</button>
+            </div>  
+        </div>
+
+        <div class="result">
+            <br>
+            <div id="fundoResultado">
+                <img class="imgLupa" src="./source/backResult-image.svg" alt="" style="width: 100%;">
+
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                
+            </div>
+
+            <textarea type="text" class="texto" id="desencrip" style="display: none;" readonly></textarea>
+
+            <button class="botao" id="copiar" style="color:#0A3871;background-color:#FFFFFF; display: none;" > Copiar </button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./decodificador.js"></script>
+
+
+    </body>
+</html>
+
